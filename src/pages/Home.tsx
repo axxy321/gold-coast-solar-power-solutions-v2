@@ -80,9 +80,10 @@ const HoverCard = ({ title, description, image, link }: { title: string, descrip
 // 5. Testimonial Carousel
 const Testimonials = () => {
     const reviews = [
-        { name: "Sarah L.", text: "Absolutely brilliant service. The team was professional, clean, and the system is performing exactly as promised. My bills have dropped by 80%." },
-        { name: "John D.", text: "I did a lot of research before choosing Gold Coast Solar Power Solutions. They were the most knowledgeable and didn't push cheap products. Extremely happy with our Fronius/REC setup." },
-        { name: "Mark T.", text: "Added a Tesla Powerwall to our existing solar. The install team were master electricians, super polite, and got it done in a day. Highly recommend." },
+        { name: "Constance Wade", text: "Absolutely Fantastic. Thank you so much to Jaydon from Gold Coast Power Solutions. I live in rural Townsville and could not get anyone out this way to answer the phone to help with my questions regarding my solar. Jaydon answered the phone promptly and advised me of a solution to my hot water switch not working. I cant tell you how important it is to be able to connect with someone and be able to point in the right direction with correct and thorough knowledge. This is the service we all love thanks again." },
+        { name: "Jeanette Struthers", text: "The young man that came was very courteous, punctual and went above and beyond fixing our solar box and got on the roof and inspected panels also before leaving. The price was cheaper than I expected for the service. I would recommend this company to anyone. Job well done Gold Coast solar power solutions." },
+        { name: "Angela Lai", text: "Such great service! Would recommend! Arranged a quote/visit the next day after I called. Quote personal came on time, had a look at the house, and gave a very professional and detailed quote. They let us know all the different prices and available options. Installer also came on time and efficiently finished his work. Everything went smoothly. Thank you to the amazing team!" },
+        { name: "Peter Murray", text: "I had my old solar system replaced on 18/2/22. The hole process was extremely easy, with great price, sales service & was the installation team that fitted it. They were very respectful of me, my house, took all the old system away, cleaned up after themselves. Generally did a good job. I would definitely recommend this company for any solar requirements. Thanks again." }
     ];
     const [current, setCurrent] = useState(0);
 

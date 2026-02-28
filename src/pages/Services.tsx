@@ -7,6 +7,7 @@ export default function Services() {
             title: "Residential Solar",
             description: "Take control of your home's power bills. Our residential solar packages use Tier 1 panels and premium inverters to ensure maximum efficiency and an industry-leading lifespan.",
             icon: <HomeIcon className="w-12 h-12 text-amber-500" />,
+            image: "https://gold-coast-solar-power-solutions.com.au/wp-content/uploads/2024/09/Best-solar-panel-installation-in-gold-coast-300x300-1-2.webp",
             features: ["Custom system design", "Tier 1 panels (JA Solar, REC)", "Premium Inverters (Sungrow, Fronius)", "Professional CEC accredited installation", "25-year performance warranty"]
         },
         {
@@ -14,6 +15,7 @@ export default function Services() {
             title: "Commercial Solar",
             description: "Protect your bottom line against rising energy prices. We design and install large-scale commercial solar systems tailored to your business's load profile.",
             icon: <Factory className="w-12 h-12 text-amber-500" />,
+            image: "https://gold-coast-solar-power-solutions.com.au/wp-content/uploads/2022/04/cspt-tab1.jpg",
             features: ["Detailed ROI & payback analysis", "Demand tariff management", "Large scale system engineering", "Minimal business disruption during install", "Ongoing maintenance & monitoring"]
         },
         {
@@ -21,6 +23,7 @@ export default function Services() {
             title: "Solar Batteries",
             description: "Don't let your excess solar energy go to waste. Store it during the day to power your home at night, and stay protected during grid outages.",
             icon: <BatteryCharging className="w-12 h-12 text-amber-500" />,
+            image: "https://gold-coast-solar-power-solutions.com.au/wp-content/uploads/2016/04/Tesla-Powerwall-2-Dimensions.jpg",
             features: ["Tesla Powerwall Certified", "Sungrow Battery Integration", "Retrofit existing solar systems", "Blackout protection", "Virtual Power Plant (VPP) ready"]
         }
     ];
@@ -42,9 +45,7 @@ export default function Services() {
                             <div className="w-full md:w-1/2">
                                 <div className="bg-slate-900 border border-white/5 aspect-video rounded-2xl overflow-hidden relative group">
                                     <div className="absolute inset-0 bg-amber-500/10 group-hover:bg-transparent transition-colors z-10"></div>
-                                    <div className="absolute inset-0 flex items-center justify-center opacity-20 group-hover:scale-110 transition-transform duration-700">
-                                        {service.icon}
-                                    </div>
+                                    <img src={service.image} alt={service.title} className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                                 </div>
                             </div>
 
