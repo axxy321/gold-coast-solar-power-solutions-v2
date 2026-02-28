@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Facebook, Instagram, Linkedin } from 'lucide-react';
+import { Mail, Phone, MapPin, Facebook, Instagram, Linkedin, Search } from 'lucide-react';
 
 // Pages
 import Home from './pages/Home';
@@ -16,29 +16,37 @@ function Navbar() {
       transition={{ type: "spring", stiffness: 100, damping: 20 }}
       className="fixed top-0 w-full z-50 bg-slate-950/60 backdrop-blur-xl border-b border-white/10"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="flex items-center gap-2">
             <img src="https://gold-coast-solar-power-solutions.com.au/wp-content/uploads/2018/08/GCSPS-logo-white.png" alt="Gold Coast Solar Power Solutions Logo" className="h-10 object-contain" />
           </Link>
-          <div className="hidden md:flex space-x-8">
-            <Link to="/" className="text-sm font-medium text-slate-300 hover:text-amber-400 transition-colors">Home</Link>
-            <Link to="/services" className="text-sm font-medium text-slate-300 hover:text-amber-400 transition-colors">Our Services</Link>
-            <Link to="/about" className="text-sm font-medium text-slate-300 hover:text-amber-400 transition-colors">About Us</Link>
-            <Link to="/contact" className="text-sm font-medium text-slate-300 hover:text-amber-400 transition-colors">Contact</Link>
+          <div className="hidden xl:flex items-center space-x-8">
+            <Link to="/" className="text-xs font-bold text-slate-300 hover:text-amber-400 transition-colors uppercase tracking-wider">Home</Link>
+            <Link to="/about" className="text-xs font-bold text-slate-300 hover:text-amber-400 transition-colors uppercase tracking-wider">About Us</Link>
+            <Link to="/services" className="text-xs font-bold text-slate-300 hover:text-amber-400 transition-colors uppercase tracking-wider">Residential</Link>
+            <Link to="/services" className="text-xs font-bold text-slate-300 hover:text-amber-400 transition-colors uppercase tracking-wider">Batteries</Link>
+            <Link to="/services" className="text-xs font-bold text-slate-300 hover:text-amber-400 transition-colors uppercase tracking-wider">Service</Link>
+            <Link to="/services" className="text-xs font-bold text-slate-300 hover:text-amber-400 transition-colors uppercase tracking-wider">Products</Link>
+            <Link to="/contact" className="text-xs font-bold text-slate-300 hover:text-amber-400 transition-colors uppercase tracking-wider">Contact Us</Link>
           </div>
-          <motion.a
-            href="tel:1300000000"
-            animate={{
-              boxShadow: ["0px 0px 0px rgba(245,158,11,0.2)", "0px 0px 20px rgba(245,158,11,0.6)", "0px 0px 0px rgba(245,158,11,0.2)"]
-            }}
-            transition={{ duration: 2, repeat: Infinity }}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="hidden md:inline-flex items-center justify-center px-6 py-2.5 text-sm font-bold text-slate-950 bg-amber-500 rounded-full"
-          >
-            Get a Free Quote
-          </motion.a>
+          <div className="hidden lg:flex items-center gap-6">
+            <button className="text-slate-300 hover:text-amber-400 transition-colors">
+              <Search className="w-5 h-5" />
+            </button>
+            <motion.a
+              href="tel:1300000000"
+              animate={{
+                boxShadow: ["0px 0px 0px rgba(245,158,11,0.2)", "0px 0px 20px rgba(245,158,11,0.6)", "0px 0px 0px rgba(245,158,11,0.2)"]
+              }}
+              transition={{ duration: 2, repeat: Infinity }}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="hidden lg:inline-flex items-center justify-center px-6 py-2.5 text-sm font-bold text-slate-950 bg-amber-500 rounded-full"
+            >
+              Get a Free Quote
+            </motion.a>
+          </div>
         </div>
       </div>
     </motion.nav>
