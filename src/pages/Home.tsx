@@ -101,7 +101,7 @@ const Testimonials = () => {
                 <h2 className="text-amber-500 font-semibold tracking-wider uppercase text-sm mb-4">Client Success Stories</h2>
                 <h3 className="text-4xl md:text-5xl font-bold text-white mb-16">Don't just take our word for it</h3>
 
-                <div className="relative h-64 md:h-48">
+                <div className="relative min-h-[450px] sm:min-h-[350px] md:min-h-[250px] w-full">
                     <AnimatePresence mode="wait">
                         <motion.div
                             key={current}
@@ -109,9 +109,9 @@ const Testimonials = () => {
                             animate={{ opacity: 1, x: 0 }}
                             exit={{ opacity: 0, x: -20 }}
                             transition={{ duration: 0.5 }}
-                            className="absolute inset-0 flex flex-col items-center justify-center"
+                            className="absolute inset-0 flex flex-col items-center justify-center w-full"
                         >
-                            <div className="text-2xl md:text-3xl font-medium text-slate-300 leading-relaxed mb-8">
+                            <div className="text-lg md:text-xl lg:text-2xl font-medium text-slate-300 leading-relaxed mb-6">
                                 "{reviews[current].text}"
                             </div>
                             <div className="text-amber-500 font-bold text-lg">
