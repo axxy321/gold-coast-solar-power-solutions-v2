@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import Services from './pages/Services';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Batteries from './pages/Batteries';
 
 function Navbar() {
   return (
@@ -25,7 +26,7 @@ function Navbar() {
             <Link to="/" className="text-xs font-bold text-slate-300 hover:text-amber-400 transition-colors uppercase tracking-wider">Home</Link>
             <Link to="/about" className="text-xs font-bold text-slate-300 hover:text-amber-400 transition-colors uppercase tracking-wider">About Us</Link>
             <Link to="/services" className="text-xs font-bold text-slate-300 hover:text-amber-400 transition-colors uppercase tracking-wider">Residential</Link>
-            <Link to="/services" className="text-xs font-bold text-slate-300 hover:text-amber-400 transition-colors uppercase tracking-wider">Batteries</Link>
+            <Link to="/batteries" className="text-xs font-bold text-slate-300 hover:text-amber-400 transition-colors uppercase tracking-wider">Batteries</Link>
             <Link to="/services" className="text-xs font-bold text-slate-300 hover:text-amber-400 transition-colors uppercase tracking-wider">Service</Link>
             <Link to="/services" className="text-xs font-bold text-slate-300 hover:text-amber-400 transition-colors uppercase tracking-wider">Products</Link>
             <Link to="/contact" className="text-xs font-bold text-slate-300 hover:text-amber-400 transition-colors uppercase tracking-wider">Contact Us</Link>
@@ -131,6 +132,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/services" element={<Services />} />
+            <Route path="/batteries" element={<Batteries />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
