@@ -50,7 +50,7 @@ function Footer() {
     <footer className="bg-slate-950 border-t border-white/10 pt-16 pb-8 mt-auto relative overflow-hidden">
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-amber-500/5 blur-[120px] rounded-full translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-12">
           <div className="space-y-6">
             <img src="https://gold-coast-solar-power-solutions.com.au/wp-content/uploads/2018/08/GCSPS-logo-white.png" alt="Logo" className="h-10 object-contain" />
             <p className="text-slate-400 text-sm leading-relaxed">
@@ -98,15 +98,6 @@ function Footer() {
               <li><Link to="/services" className="text-slate-400 hover:text-amber-400 transition-colors text-sm">Commercial Solar</Link></li>
               <li><Link to="/services" className="text-slate-400 hover:text-amber-400 transition-colors text-sm">Solar Batteries</Link></li>
               <li><Link to="/about" className="text-slate-400 hover:text-amber-400 transition-colors text-sm">About Us</Link></li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="text-white font-bold mb-6">Business Details</h4>
-            <ul className="space-y-3 text-sm text-slate-400">
-              <li><span className="text-slate-300 block mb-1">ABN</span> 12 345 678 901</li>
-              <li><span className="text-slate-300 block mb-1">CEC Accreditation</span> A1234567</li>
-              <li><span className="text-slate-300 block mb-1">Electrical License</span> 123456</li>
             </ul>
           </div>
         </div>
