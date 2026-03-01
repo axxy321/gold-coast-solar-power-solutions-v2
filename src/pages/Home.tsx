@@ -4,6 +4,7 @@ import type { Variants } from 'framer-motion';
 import { ArrowRight, ShieldCheck, Zap } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { GlowingEffectDemo } from '../components/glowing-effect-demo';
+import { ContainerScrollDemo } from '../components/container-scroll-demo';
 import clsx from 'clsx';
 import { twMerge } from 'tailwind-merge';
 
@@ -233,6 +234,13 @@ export default function Home() {
                             <img key={index} src={logo} alt="Partner Logo" className="h-10 md:h-12 object-contain filter grayscale hover:grayscale-0 opacity-50 hover:opacity-100 transition-all cursor-pointer" />
                         ))}
                     </motion.div>
+                </div>
+            </section>
+
+            {/* Container Scroll Animation Section */}
+            <section className="bg-slate-950 relative overflow-hidden">
+                <div className="max-w-7xl mx-auto px-4 relative z-10 hidden md:block">
+                    <ContainerScrollDemo />
                 </div>
             </section>
 
