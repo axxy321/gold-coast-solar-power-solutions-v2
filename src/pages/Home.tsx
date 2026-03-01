@@ -3,6 +3,7 @@ import { motion, useScroll, useTransform, useMotionValue, useSpring, AnimatePres
 import type { Variants } from 'framer-motion';
 import { ArrowRight, ShieldCheck, Zap } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { GlowingEffectDemo } from '../components/glowing-effect-demo';
 import clsx from 'clsx';
 import { twMerge } from 'tailwind-merge';
 
@@ -232,6 +233,20 @@ export default function Home() {
                             <img key={index} src={logo} alt="Partner Logo" className="h-10 md:h-12 object-contain filter grayscale hover:grayscale-0 opacity-50 hover:opacity-100 transition-all cursor-pointer" />
                         ))}
                     </motion.div>
+                </div>
+            </section>
+
+            {/* Glowing Effect Demo Section */}
+            <section className="py-24 bg-slate-950 relative overflow-hidden border-t border-white/5">
+                <div className="absolute top-1/2 left-1/2 w-[800px] h-[800px] bg-amber-500/5 blur-[120px] rounded-full -translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
+                <div className="max-w-7xl mx-auto px-4 relative z-10">
+                    <div className="text-center mb-16">
+                        <h2 className="text-5xl font-bold text-white mb-6">The Gold Coast Difference</h2>
+                        <p className="text-xl text-slate-400 max-w-2xl mx-auto">
+                            Why thousands of local homeowners and businesses trust us to secure their energy future.
+                        </p>
+                    </div>
+                    <GlowingEffectDemo />
                 </div>
             </section>
 
